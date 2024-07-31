@@ -13,6 +13,7 @@ import Signup from './pages/Signup.jsx';
 import EditPost from './pages/EditPost.jsx';
 import Post from './pages/Post.jsx';
 import AllPosts from "./pages/AllPosts.jsx";
+import Logout from './pages/Logout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
         path: "/post/:slug",
         element: <Post />,
     },
+    {
+        path: "/logout",
+        element: <Logout/>
+    }
   ],
 },
 
